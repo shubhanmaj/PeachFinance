@@ -1,0 +1,22 @@
+{
+  "name": "peachfinance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhanmaj/PeachFinance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhanmaj/PeachFinance/issues"
+  },
+  "homepage": "https://github.com/shubhanmaj/PeachFinance#readme",
+  "devDependencies": {
+    "cypress": "^9.2.1"
+  }
+}
