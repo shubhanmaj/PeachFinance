@@ -1,4 +1,5 @@
 # dependencies
 /node_modules
-/cypress/results
+/cypress/results/junit
+/cypress/results/mochawesome
 /mochawesome-report
