@@ -10,9 +10,10 @@
     "delete:reports": "rm -r cypress/results/* || true",
     "prereport": "npm run delete:reports",
     "delete:results": "node clean.js",
-    "mochawesome:html": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
+    "mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
     "junit:report": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/result.xml",
-    "cypress:e2e": "npm run cy:run && npm run junit:report && npm run mochawesome:html"
+    "cypress:run" : "npm run prereport && npx cypress run",
+    "cypress:e2e": "npm run cypress:run; npm run mochawesome:merge"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,11 @@
   "devDependencies": {
     "cypress": "^9.2.1",
     "cypress-multi-reporters": "^1.5.0",
-    "mocha": "8.3.2",
+    "junit-merge": "^2.0.0",
+    "mocha": "^8.4.0",
     "mocha-junit-reporter": "^2.0.2",
     "mochawesome": "^7.0.1",
-    "mochawesome-merge": "^4.2.1"
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1"
   }
 }
