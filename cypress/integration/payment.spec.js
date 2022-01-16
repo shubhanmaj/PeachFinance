@@ -8,29 +8,20 @@ describe("Loan Payment test suite", ()=> {
         cy.visit("/")
         cy.login(email, password)
     })
-    it("Setup payment method", ()=>{
-        cy.get(".jKtogL").should("be.visible")
-        cy.get('.LoanActionMenuTrigger__Button-sc-ltlagb-0').click()
-        cy.contains("Manage payment methods").click()
-        cy.contains("Add payment method").click()
-        cy.get(".btn-label").eq(1).click()
-        cy.get('input[name="first name"]').type("John",{force: true})
-        cy.get('input[name="last name"]').type("Doe", {force: true})
-        cy.get(".bdNrRQ").eq(0).type("6011111111111117", {force: true})
-        cy.get(".bdNrRQ").eq(1).type("07/22", {force: true})
-        cy.get(".bdNrRQ").eq(2).type("554", {force: true})
-        cy.get(".bdNrRQ").eq(3).type("21770", {force: true})
-        cy.get('[data-cy="submit"]').click({force: true})
-        cy.get(".secondary").click({force: true})
-        cy.get('.message').should("contain", "Debit card successfully added.")
+    it("TC_Paymet_3-1: Verify that user can add payment method successfully", ()=>{
+        const creditCardNumber = "6011111111111117";
+        const exp = "07/22";
+        const cvv = "554";
+        const zip = "21101"
+        onPayment.setUpPaymentMethod(creditCardNumber, exp, cvv, zip)
     })
-    it('Verify that payment is done successfully using "Upcoming + Overdue"', () => {
+    it('TC_Paymet_4-1: Verify that payment is done successfully using "Upcoming + Overdue" ', () => {
         onPayment.upComingOverdue()
     });
-    it('User should not be allowed to process payment with "Remaining balance" selection', () => {
+    it('TC_Paymet_5-1: Verify that Payment should not be proceed with Remaining Balance', () => {
         onPayment.remainingBalance()
     });
-    it('User should not be allowed to process payment with "Other amount" selection', () => {
+    it('TC_Paymet_6-1: Verify that Payment should not be proceed with Other amount', () => {
         onPayment.otherAmount()
     });
     
