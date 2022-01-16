@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "cy:run": "npm run prereport && npx cypress run",
+    "delete:reports": "rm -r cypress/results/* || true",
+    "prereport": "npm run delete:reports",
+    "delete:results": "node clean.js",
+    "mochawesome:html": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
+    "junit:report": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/result.xml",
+    "cypress:e2e": "npm run cy:run && npm run junit:report && npm run mochawesome:html"
   },
   "repository": {
     "type": "git",
@@ -17,6 +25,10 @@
   },
   "homepage": "https://github.com/shubhanmaj/PeachFinance#readme",
   "devDependencies": {
-    "cypress": "^9.2.1"
+    "cypress": "^9.2.1",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1"
   }
 }

@@ -5,8 +5,8 @@ export class Login{
         cy.login( email, password )
     }
     invalidEmail_Password(){
-        const email = "invalid@peachfinance.com";
-        const password = "invalidPassword"
+        const email = "invalid01@peachfinance.com";
+        const password = "invalid01Password"
         cy.login( email, password )
         cy.get(".lilBFF").should("contain", "Not authorized")
     }

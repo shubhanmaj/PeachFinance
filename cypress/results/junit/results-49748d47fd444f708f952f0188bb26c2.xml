@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="21.8750" tests="6" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-15T23:17:01" tests="0" file="cypress/integration/login.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Peach Finance Login test" timestamp="2022-01-15T23:17:01" tests="6" time="21.8560" failures="0">
+    <testcase name="Peach Finance Login test TC_AUTH_001: Verify the login of PeachyLoans using valid Email and valid Password " time="4.6230" classname="TC_AUTH_001: Verify the login of PeachyLoans using valid Email and valid Password ">
+    </testcase>
+    <testcase name="Peach Finance Login test TC_AUTH_002: Verify the unsuccessful login of PeachyLoans using invalid Email and invalid Password " time="1.9910" classname="TC_AUTH_002: Verify the unsuccessful login of PeachyLoans using invalid Email and invalid Password ">
+    </testcase>
+    <testcase name="Peach Finance Login test TC_AUTH_003: Verify the account is locked due to too many failed attempts using invalid Email and invalid Password " time="11.7320" classname="TC_AUTH_003: Verify the account is locked due to too many failed attempts using invalid Email and invalid Password ">
+    </testcase>
+    <testcase name="Peach Finance Login test TC_AUTH_004: Verify the unsuccessful login of PeachyLoans using valid Email and invalid Password " time="1.9360" classname="TC_AUTH_004: Verify the unsuccessful login of PeachyLoans using valid Email and invalid Password ">
+    </testcase>
+    <testcase name="Peach Finance Login test TC_AUTH_005: Verify the unsuccessful login page with blank Email and password. " time="0.5770" classname="TC_AUTH_005: Verify the unsuccessful login page with blank Email and password. ">
+    </testcase>
+    <testcase name="Peach Finance Login test TC_AUTH_006: Verify the unsuccessful login of PeachyLoans entering Password only " time="0.8620" classname="TC_AUTH_006: Verify the unsuccessful login of PeachyLoans entering Password only ">
+    </testcase>
+  </testsuite>
+</testsuites>

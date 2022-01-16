@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-15T23:17:01.932Z",
+    "end": "2022-01-15T23:17:23.807Z",
+    "duration": 21875,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bddaf68d-2497-402f-ab93-f5ac85db7085",
+      "title": "",
+      "fullFile": "cypress/integration/login.spec.js",
+      "file": "cypress/integration/login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e5e67a5c-49a0-4d21-8491-30fde9adaf52",
+          "title": "Peach Finance Login test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_AUTH_001: Verify the login of PeachyLoans using valid Email and valid Password ",
+              "fullTitle": "Peach Finance Login test TC_AUTH_001: Verify the login of PeachyLoans using valid Email and valid Password ",
+              "timedOut": null,
+              "duration": 4623,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.onLogin.successfullLogin();",
+              "err": {},
+              "uuid": "75c13b61-3f92-4c9c-be27-46fa8d0bdc49",
+              "parentUUID": "e5e67a5c-49a0-4d21-8491-30fde9adaf52",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_AUTH_002: Verify the unsuccessful login of PeachyLoans using invalid Email and invalid Password ",
+              "fullTitle": "Peach Finance Login test TC_AUTH_002: Verify the unsuccessful login of PeachyLoans using invalid Email and invalid Password ",
+              "timedOut": null,
+              "duration": 1991,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.onLogin.invalidEmail_Password();",
+              "err": {},
+              "uuid": "d744b33e-19c9-4c00-bf2b-196b3b477da0",
+              "parentUUID": "e5e67a5c-49a0-4d21-8491-30fde9adaf52",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_AUTH_003: Verify the account is locked due to too many failed attempts using invalid Email and invalid Password ",
+              "fullTitle": "Peach Finance Login test TC_AUTH_003: Verify the account is locked due to too many failed attempts using invalid Email and invalid Password ",
+              "timedOut": null,
+              "duration": 11732,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.onLogin.tooManyAttempts();",
+              "err": {},
+              "uuid": "cbb51af0-618f-444c-bae6-232e86921a10",
+              "parentUUID": "e5e67a5c-49a0-4d21-8491-30fde9adaf52",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_AUTH_004: Verify the unsuccessful login of PeachyLoans using valid Email and invalid Password ",
+              "fullTitle": "Peach Finance Login test TC_AUTH_004: Verify the unsuccessful login of PeachyLoans using valid Email and invalid Password ",
+              "timedOut": null,
+              "duration": 1936,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.onLogin.invalidPass();",
+              "err": {},
+              "uuid": "b5913ac4-93e8-4e54-a988-e597e0604559",
+              "parentUUID": "e5e67a5c-49a0-4d21-8491-30fde9adaf52",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_AUTH_005: Verify the unsuccessful login page with blank Email and password. ",
+              "fullTitle": "Peach Finance Login test TC_AUTH_005: Verify the unsuccessful login page with blank Email and password. ",
+              "timedOut": null,
+              "duration": 577,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.onLogin.blankEmail_Password();",
+              "err": {},
+              "uuid": "cb5285f0-0bd2-451e-a16c-fbc7e2b73d2c",
+              "parentUUID": "e5e67a5c-49a0-4d21-8491-30fde9adaf52",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_AUTH_006: Verify the unsuccessful login of PeachyLoans entering Password only ",
+              "fullTitle": "Peach Finance Login test TC_AUTH_006: Verify the unsuccessful login of PeachyLoans entering Password only ",
+              "timedOut": null,
+              "duration": 862,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.onLogin.blankEmail();",
+              "err": {},
+              "uuid": "d8751947-0c06-4eb6-b05e-e9759f801362",
+              "parentUUID": "e5e67a5c-49a0-4d21-8491-30fde9adaf52",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "75c13b61-3f92-4c9c-be27-46fa8d0bdc49",
+            "d744b33e-19c9-4c00-bf2b-196b3b477da0",
+            "cbb51af0-618f-444c-bae6-232e86921a10",
+            "b5913ac4-93e8-4e54-a988-e597e0604559",
+            "cb5285f0-0bd2-451e-a16c-fbc7e2b73d2c",
+            "d8751947-0c06-4eb6-b05e-e9759f801362"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21721,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
