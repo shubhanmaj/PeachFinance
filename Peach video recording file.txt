@@ -1,0 +1,5 @@
+Generate Mochawesome html report
+https://www.loom.com/share/3247f8e3fb5f489097f623302fb8c878
+
+End to End test result
+https://www.loom.com/share/bfa79e7f1edd4ddab9746eef351a2953
